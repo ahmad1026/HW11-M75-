@@ -58,6 +58,7 @@ body {
 }
 
 .section2-box {
+  border-radius: 4px;
   padding: 10px 8px 5px 8px;
   width: 100%;
   height: 200px;
@@ -104,6 +105,13 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.best-artist-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  margin: auto;
+  background-color: #B4CD93;
 }
 
 .section3 .content {
@@ -177,6 +185,7 @@ body {
   background-color: #e6e6e6;
 }
 .section3-box1 {
+  border-radius: 4px;
   padding: 10px 8px 5px 8px;
   width: 100%;
   height: 200px;
@@ -186,6 +195,10 @@ body {
   gap: 8px;
 }
 .section3-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
   padding: 10px 8px 5px 8px;
   width: 100%;
   height: 100px;
@@ -196,7 +209,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+}
+.time-box{
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+}
+.time{
+  gap: 10px;
 }
 
 @font-face {
