@@ -1,0 +1,19 @@
+.slider-menu {
+  position: absolute;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.logo{
+  gap: 20px;
+}
+
+.slid-btn {
+  width: 40px;
+  background-color: gray;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+

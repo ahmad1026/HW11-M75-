@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div  class="container-fluid">
+    <div class="row flex-nowrap">
+      <div onclick="openMenu(event)" id="slid-btn" class="slid-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <!--menu block-->
+      <div id="block-menu" class="slider-menu d-none bg-dark">
+        <!--content menu-->
+        <div class="">
+          <!--logo-->
+          <div class="logo d-flex justify-content-between align-items-center">
+            <div class="brand">
+              <img src="./publics/images/Bezier1.svg" alt="">
+              <img src="./publics/images/Bezier.svg" alt="">
+            </div>
+            <div onclick="closeMenu(event)" id="slid-btn" class="slid-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!--menu items-->
+          <div class="menu-items"></div>
+
+          <!--setting and logout-->
+          <div></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
