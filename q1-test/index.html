@@ -14,37 +14,99 @@
 </head>
 
 <body>
-
-  <div  class="container-fluid">
-    <div class="row flex-nowrap">
-      <div onclick="openMenu(event)" id="slid-btn" class="slid-btn">
-        <i class="fa-solid fa-arrow-right"></i>
+  <div class="header d-flex align-items-center">
+    <div onclick="openMenu(event)" id="slid-btn" class="slid-btn">
+      <img src="./publics/images/menubar.png" alt="">
+    </div>
+    <div class="search-box d-flex align-items-center">
+      <a href="#">
+        <img src="./publics/images/search-normal.svg" alt="">
+      </a>
+      <input placeholder="Search artists, projects" type="text">
+    </div>
+    <div class="d-flex align-items-center">
+      <img src="./publics/images/Ellipse 1.png" alt="">
+      <div class="d-flex flex-column">
+        <small class="ml-1">Ahmad Mohammadi</small>
+        <small class="ml-1">Admin</small>
       </div>
-      <!--menu block-->
-      <div id="block-menu" class="slider-menu d-none bg-dark">
-        <!--content menu-->
-        <div class="">
-          <!--logo-->
-          <div class="logo d-flex justify-content-between align-items-center">
-            <div class="brand">
-              <img src="./publics/images/Bezier1.svg" alt="">
-              <img src="./publics/images/Bezier.svg" alt="">
-            </div>
-            <div onclick="closeMenu(event)" id="slid-btn" class="slid-btn">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-
-          <!--menu items-->
-          <div class="menu-items"></div>
-
-          <!--setting and logout-->
-          <div></div>
-        </div>
-
-      </div>
+      <img src="./publics/images/Frame 13.svg" alt="">
 
     </div>
+
+  </div>
+  <!--menu block-->
+  <div id="block-menu" class="slider-menu">
+    <!--content menu-->
+    <div class="nav-content">
+      <!--logo-->
+      <div class="logo d-flex justify-content-between align-items-center">
+        <div class="brand">
+          <img src="./publics/images/Bezier1.svg" alt="">
+          <img src="./publics/images/Bezier.svg" alt="">
+        </div>
+        <div onclick="closeMenu(event)" id="slid-btn" class="slid-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <!--menu items-->
+      <div class="menu-items">
+        <ul id="navbar" class="nav">
+          <li class="mb-3">
+            <a id="dashboard" class="nav-btn nav-item d-flex align-items-center" href="#">
+              <img src="./publics/images/category.svg" alt="">
+              Dashboard
+            </a>
+          </li>
+          <li class="mb-4">
+            <a id="projects" class="nav-btn nav-item d-flex align-items-center" href="#">
+              <img src="./publics/images/profile.svg" alt="">
+              Projects
+            </a>
+          </li>
+          <li class="mb-4">
+            <a id="galary" class="nav-btn nav-item d-flex align-items-center" href="#">
+              <img src="./publics/images/gallery.svg" alt="">
+              Galary
+            </a>
+          </li>
+          <li class="mb-4">
+            <a id="sales" class="nav-btn nav-item d-flex align-items-center" href="#">
+              <img src="./publics/images/receipt-2.svg" alt="">
+              Sales
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--setting and logout-->
+      <div class="mt-4">
+        <ul class="nav">
+          <li class="mb-4">
+            <a id="setting" class="nav-btn nav-item d-flex flex-row align-items-center" href="#">
+              <img src="./publics/images/setting-2.svg" alt="">
+              Setting
+            </a>
+          </li>
+          <li class="mb-4">
+            <a id="logout" class="nav-btn nav-item d-flex flex-row align-items-center" href="#">
+              <img src="./publics/images/logout.svg" alt="">
+              Log out
+            </a>
+          </li>
+          <li class="ml-4">
+            <label class="switch">
+              <input onchange="changeTheme(event)" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
 
   </div>
 
