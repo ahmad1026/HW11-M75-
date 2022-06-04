@@ -28,11 +28,11 @@ function openMenu(event) {
 function changeTheme(event) {
   if(event.target.value === 'on'){
     blockMenu.classList.add('bg-dark');
-    bodythem.classList.add('bg-dark')
+    // bodythem.classList.add('bg-dark')
     event.target.value = 'off';
   }else if(event.target.value === 'off'){
     blockMenu.classList.remove('bg-dark');
-    blockMenu.classList.add('lightthem');
+    // blockMenu.classList.add('lightthem');
     event.target.value = 'on';
   }
 
