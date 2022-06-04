@@ -1,4 +1,5 @@
 let blockMenu = document.getElementById("block-menu");
+let bodythem = document.querySelector('body');
 
 let navbtns = document.querySelectorAll('.nav-content a');
 Array.from(navbtns).forEach(function(btn){
@@ -27,6 +28,7 @@ function openMenu(event) {
 function changeTheme(event) {
   if(event.target.value === 'on'){
     blockMenu.classList.add('bg-dark');
+    bodythem.classList.add('bg-dark')
     event.target.value = 'off';
   }else if(event.target.value === 'off'){
     blockMenu.classList.remove('bg-dark');
