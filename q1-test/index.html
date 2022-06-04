@@ -15,24 +15,28 @@
 
 <body>
   <div class="header d-flex align-items-center">
-    <div onclick="openMenu(event)" id="slid-btn" class="slid-btn">
-      <img src="./publics/images/menubar.png" alt="">
-    </div>
-    <div class="search-box d-flex align-items-center">
-      <a href="#">
-        <img src="./publics/images/search-normal.svg" alt="">
-      </a>
-      <input placeholder="Search artists, projects" type="text">
-    </div>
-    <div class="d-flex align-items-center">
-      <img src="./publics/images/Ellipse 1.png" alt="">
-      <div class="d-flex flex-column">
-        <small class="ml-1">Ahmad Mohammadi</small>
-        <small class="ml-1">Admin</small>
+    <div class="col-7 d-flex justify-content-start align-items-center">
+      <div onclick="openMenu(event)" id="slid-btn">
+        <img width="40px" src="./publics/images/menubar.png" alt="">
       </div>
-      <img src="./publics/images/Frame 13.svg" alt="">
-
+      <div class="search-box d-flex align-items-center">
+        <a href="#">
+          <img src="./publics/images/search-normal.svg" alt="">
+        </a>
+        <input placeholder="Search artists, projects" type="text">
+      </div>
     </div>
+    <div class="col-4 d-flex justify-content-around">
+      <div class="d-flex align-items-center">
+        <img class="d-none d-sm-block" src="./publics/images/Ellipse 1.png" alt="">
+        <div class="d-flex flex-column">
+          <small>Ahmad Mohammadi</small>
+          <small>Admin</small>
+        </div>
+      </div>
+      <img class="ml-2" src="./publics/images/Frame 13.svg" alt="">
+    </div>
+  
 
   </div>
   <!--menu block-->
@@ -105,7 +109,6 @@
       </div>
     </div>
   </div>
-
   <div class="main">
 
   </div>
